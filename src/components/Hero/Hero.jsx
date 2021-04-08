@@ -22,21 +22,21 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="hero" className="jumbotron">
+    <section id="hero" className="jumbotron bg-dark">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
+          <h1 className="hero-title text-light">
             {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
+            <span className="text-danger">{name || 'Md Sowrov Sarkar'}</span>
             <br />
-            {subtitle || "I'm the Unknown Developer."}
+            {subtitle || "I'm Full-Stack Developer & React Js and Django Specialist."}
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
+            <span className="cta-btn cta-btn--hero bg-info">
               <Link to="about" smooth duration={1000}>
-                {cta || 'Know more'}
+                {cta || 'About Me'}
               </Link>
             </span>
           </p>
