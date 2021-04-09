@@ -22,7 +22,7 @@ module.exports = {
       },
     },
     {
-      resolve: `sowrov`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Portfolio`,
         short_name: `Portfolio`,
